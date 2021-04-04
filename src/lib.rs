@@ -1,7 +1,5 @@
 extern crate alloc;
 
-extern crate test;
-
 mod deserialize;
 mod serialize;
 pub mod nbt;
