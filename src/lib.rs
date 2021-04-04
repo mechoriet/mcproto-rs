@@ -1,9 +1,5 @@
-#![cfg_attr(feature = "gat", feature(generic_associated_types))]
-#![cfg_attr(not(feature = "std"), no_std)]
-
 extern crate alloc;
 
-#[cfg(all(test, feature = "std", feature = "bench"))]
 extern crate test;
 
 mod deserialize;
@@ -25,5 +21,4 @@ pub mod v1_16_3;
 pub use deserialize::*;
 pub use serialize::*;
 
-#[cfg(all(test, feature = "std"))]
 mod test_macros;
